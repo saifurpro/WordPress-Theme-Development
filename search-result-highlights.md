@@ -16,7 +16,7 @@ add_filter('the_title', 'theme_highlight_search_results');
 ```
 
 
-## You have put css in style.css
+## You have to put css in style.css
 ```
 .search-highlight {
     background-color: #ff0;
