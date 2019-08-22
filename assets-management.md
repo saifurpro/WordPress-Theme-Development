@@ -1,9 +1,8 @@
 # Assets Management
 
+
+## Cache Busting code
 ```
-/**
-* Cache Busting code
-*/
 if(site_url() == " ") {
     define("THEME_NAME_VERSION", time() );
 } else {
@@ -11,10 +10,9 @@ if(site_url() == " ") {
 }
 ```
 
+
+## Enqueue scripts and styles (Theme Assets)
 ```
-/**
-* Theme Assets
-*/
 if( ! function_exists("_text_domain_assets") ):
     function _text_domain_assets() {
 
