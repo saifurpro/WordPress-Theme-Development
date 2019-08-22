@@ -18,6 +18,8 @@ function textdomain_blog_pagination() {
 ```
 
 ### call the function which is defined in functions.php
+```
 <?php 
   function_name_here();
 ?>
+```
