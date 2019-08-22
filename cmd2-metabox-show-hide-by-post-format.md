@@ -1,4 +1,4 @@
-#CMB2 Metabox show hide by Post format
+# CMB2 Metabox show hide by Post format
 
 ```
 function _text_domain_admin_assets($hook) {
@@ -41,58 +41,54 @@ add_action("admin_enqueue_scripts", "_text_domain_admin_assets");
 jQuery(document).ready(function(){
 
 
-			var id = jQuery( 'input[name="post_format"]:checked' ).attr('id');
+	var id = jQuery( 'input[name="post_format"]:checked' ).attr('id');
 
-			if(id == 'post-format-video'){
-				jQuery('.cmb2-id--for-video').show();
-			}else{
-				jQuery('.cmb2-id--for-video').hide();
-			}
+	if(id == 'post-format-video'){
+		jQuery('.cmb2-id--for-video').show();
+	}else{
+		jQuery('.cmb2-id--for-video').hide();
+	}
 
-			if(id == 'post-format-audio'){
-				jQuery('.cmb2-id--for-audio').show();
-			}else{
-				jQuery('.cmb2-id--for-audio').hide();
-			}
+	if(id == 'post-format-audio'){
+		jQuery('.cmb2-id--for-audio').show();
+	}else{
+		jQuery('.cmb2-id--for-audio').hide();
+	}
 
-			
-
-
-
-			if(id == 'post-format-gallery'){
-				jQuery('.cmb2-id--for-gallery').show();
-			}else{
-				jQuery('.cmb2-id--for-gallery').hide();
-			}
+	if(id == 'post-format-gallery'){
+		jQuery('.cmb2-id--for-gallery').show();
+	}else{
+		jQuery('.cmb2-id--for-gallery').hide();
+	}
 
 
-			jQuery( 'input[name="post_format"]' ).change(function(){
-				jQuery('.cmb2-id--for-gallery').hide();
-				jQuery('.cmb2-id--for-audio').hide();
-				jQuery('.cmb2-id--for-video').hide();
+	jQuery( 'input[name="post_format"]' ).change(function(){
+		jQuery('.cmb2-id--for-gallery').hide();
+		jQuery('.cmb2-id--for-audio').hide();
+		jQuery('.cmb2-id--for-video').hide();
 
-				var id = jQuery( 'input[name="post_format"]:checked' ).attr('id');
+		var id = jQuery( 'input[name="post_format"]:checked' ).attr('id');
 
-				if(id == 'post-format-video'){
-					jQuery('.cmb2-id--for-video').show();
-				}else{
-					jQuery('.cmb2-id--for-video').hide();
-				}
+		if(id == 'post-format-video'){
+			jQuery('.cmb2-id--for-video').show();
+		}else{
+			jQuery('.cmb2-id--for-video').hide();
+		}
 
-				if(id == 'post-format-audio'){
-					jQuery('.cmb2-id--for-audio').show();
-				}else{
-					jQuery('.cmb2-id--for-audio').hide();
-				}
+		if(id == 'post-format-audio'){
+			jQuery('.cmb2-id--for-audio').show();
+		}else{
+			jQuery('.cmb2-id--for-audio').hide();
+		}
 
-				if(id == 'post-format-gallery'){
-					jQuery('.cmb2-id--for-gallery').show();
-				}else{
-					jQuery('.cmb2-id--for-gallery').hide();
-				}	
+		if(id == 'post-format-gallery'){
+			jQuery('.cmb2-id--for-gallery').show();
+		}else{
+			jQuery('.cmb2-id--for-gallery').hide();
+		}	
 
 
-			});
-		})
+	});
+})
 </script>
 ```
