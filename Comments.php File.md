@@ -35,7 +35,7 @@
 ```
 
 ## This code will be in single.php
-``
+```
 <?php 
 if(! post_password_required() && comments_open() ){
    comments_template();
