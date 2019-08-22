@@ -1,8 +1,7 @@
 # WordPress Theme Supports
+
+## Theme Name Setup functions and definitions
 ```
-/**
-* Theme Setup Function
-*/
 if( ! function_exists("_text_domain_setup") ):
     function _text_domain_setup() {
 
@@ -53,6 +52,7 @@ endif;
 add_action("after_setup_theme", "_text_domain_setup");
 ```
 
+## content width in pixels, based on the theme's design and stylesheet.
 ```
 function theme_name_content_width() {
     $GLOBALS['content_width'] = apply_filters( 'theme_name_content_width', 640 );
