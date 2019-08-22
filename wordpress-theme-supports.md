@@ -52,3 +52,10 @@ if( ! function_exists("_text_domain_setup") ):
 endif;
 add_action("after_setup_theme", "_text_domain_setup");
 ```
+
+```
+function theme_name_content_width() {
+    $GLOBALS['content_width'] = apply_filters( 'theme_name_content_width', 640 );
+}
+add_action('after_setup_theme', 'theme_name_content_width');
+```
