@@ -46,6 +46,8 @@ add_action("wp_enqueue_scripts", "alphachild_assets");
 
 ```
 
+// Precursion to overwrite on childtheme
+
 if ( ! function_exists( 'theme_special_nav' ) ) {
     function theme_special_nav() {
         //  Do something.
