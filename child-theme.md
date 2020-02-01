@@ -14,10 +14,10 @@ themename-child
 /*
  Theme Name:   Twenty Fifteen Child
  Theme URI:    http://example.com/twenty-fifteen-child/
- Description:  Twenty Fifteen Child Theme
  Author:       John Doe
  Author URI:   http://example.com
  Template:     twentyfifteen
+ Description:  Twenty Fifteen Child Theme
  Version:      1.0.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
@@ -36,7 +36,13 @@ function enqueue_parent_styles() {
 }
 
 ```
-
+OR
+```
+function alphachild_assets(){
+    wp_enqueue_style("parent-style", get_parent_theme_file_uri("/style.css"), array(), "1.0", "all");
+}
+add_action("wp_enqueue_scripts", "alphachild_assets");
+```
 
 ```
 
