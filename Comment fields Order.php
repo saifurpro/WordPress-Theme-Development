@@ -1,3 +1,4 @@
+<?php 
 
 //Comment fields Order
 // functions.php
