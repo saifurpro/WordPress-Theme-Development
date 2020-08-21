@@ -7,6 +7,11 @@
 </a>
 ```
 
+## Clickable Author to show author post
+```
+<?php the_author_posts_link(); ?>
+```
+
 ## display name
 ```
 <?php the_author(); ?>
