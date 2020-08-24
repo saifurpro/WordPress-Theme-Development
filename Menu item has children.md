@@ -12,7 +12,7 @@
        ) 
     );
 
-    $_text_domain_menu = src_replace("menu-item-has-children", "menu-item-has-children my_class_name", $_text_domain_menu); 
+    $_text_domain_menu = str_replace("menu-item-has-children", "menu-item-has-children my_class_name", $_text_domain_menu); 
 
     echo $_text_domain_menu;
 
